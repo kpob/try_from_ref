@@ -1,0 +1,16 @@
+[package]
+name = "derive-try-from"
+edition = "2021"
+version = "0.1.0"
+authors = ["Krzysztof Pobiarżyn <krzysztof.pobiarzyn@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/kpob/try_from_ref"
+
+[dependencies]
+proc-macro2 = "1.0.69"
+proc-macro-error = "1.0.4"
+quote = "1.0.33"
+syn = { version = "2.0.29", features = ["full"] }
+
+[lib]
+proc-macro = true
