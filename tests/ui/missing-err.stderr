@@ -1,0 +1,8 @@
+error: Missing err attribute
+
+         = help: Add #[err(Type)] attribute
+
+ --> tests/ui/missing-err.rs:5:8
+  |
+5 | struct MyStruct {
+  |        ^^^^^^^^

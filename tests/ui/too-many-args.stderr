@@ -1,0 +1,10 @@
+error: Cannot use default and expr attributes together
+
+         = help: Remove one of them
+
+  --> tests/ui/too-many-args.rs:9:5
+   |
+9  | /     #[default]
+10 | |     #[expr("Hello".to_string())]
+11 | |     text: String,
+   | |________________^

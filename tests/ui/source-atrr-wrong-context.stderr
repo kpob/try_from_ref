@@ -1,0 +1,8 @@
+error: Attribute source used in the wrong context
+
+         = note: Only source and err attributes are allowed here
+
+ --> tests/ui/source-atrr-wrong-context.rs:9:5
+  |
+9 |     #[source(OtherSource)]
+  |     ^^^^^^^^^^^^^^^^^^^^^^

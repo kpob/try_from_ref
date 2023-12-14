@@ -1,0 +1,8 @@
+error: Missing source attribute
+
+         = help: Add #[source(Type)] attribute
+
+ --> tests/ui/missing-source.rs:5:8
+  |
+5 | struct MyStruct {
+  |        ^^^^^^^^
