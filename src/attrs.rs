@@ -18,9 +18,9 @@ pub struct StructAttrs {
 impl StructAttrs {
     /// Parses the attributes and returns an instance of `StructAttrs`.
     ///
-    /// If an unknown attribute is found or the source or error is missing, 
+    /// If an unknown attribute is found or the source or error is missing,
     /// this function aborts the compilation.
-    /// 
+    ///
     /// # Arguments
     ///
     /// * `context` - The context used for error reporting.
@@ -86,7 +86,7 @@ pub struct FieldAttrs {
 
 impl FieldAttrs {
     /// Parses the attributes and returns an instance of `FieldAttrs`.
-    /// 
+    ///
     /// If an unknown attribute is found, this function aborts the compilation.
     ///
     /// # Arguments
@@ -123,7 +123,7 @@ impl FieldAttrs {
 
         Self { default, expr }
     }
-    
+
     /// Returns `true` if the `default` attribute is present, `false` otherwise.
     pub fn default(&self) -> bool {
         self.default

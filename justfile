@@ -24,4 +24,4 @@ lint: clippy
 	cargo fmt
 
 release:
-    cargo publish -p casper-event-standard
+    cargo publish -p derive-try-from-ref

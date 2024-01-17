@@ -1,5 +1,5 @@
 [package]
-name = "derive-try-from"
+name = "derive-try-from-ref"
 edition = "2021"
 version = "0.1.0"
 authors = ["Krzysztof Pobiarżyn <krzysztof.pobiarzyn@gmail.com>"]

@@ -1,18 +1,17 @@
 use proc_macro_error::abort;
 
-
 /// Parses the given attribute or aborts the program if parsing fails.
-/// 
+///
 /// # Arguments
-/// 
+///
 /// * `attr` - The attribute to parse.
-/// 
+///
 /// # Generic Parameters
-/// 
+///
 /// * `T` - The type to parse the attribute into. Must implement `syn::parse::Parse`.
-/// 
+///
 /// # Returns
-/// 
+///
 /// The parsed value of type `T`.
 pub fn parse_attr_or_abort<T: syn::parse::Parse>(attr: &syn::Attribute) -> T {
     let ident = attr.path().get_ident().map(|i| i.to_string()).unwrap_or_default();
@@ -33,7 +32,7 @@ pub fn parse_attr_or_abort<T: syn::parse::Parse>(attr: &syn::Attribute) -> T {
 ///
 /// # Panics
 ///
-/// This function panics if the attribute does not exist or 
+/// This function panics if the attribute does not exist or
 /// should not be used in this context (eg #[source] attribute in the context of a field).
 pub fn invalid_attr_context(attr: &syn::Attribute) {
     let ident = attr.path().get_ident().map(|i| i.to_string()).unwrap_or_default();

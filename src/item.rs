@@ -5,7 +5,7 @@ use syn::punctuated::Punctuated;
 use syn::{FieldValue, Token, Type};
 
 /// Represents an item to be tokenized.
-/// 
+///
 /// In the result of tokenization, an implementation of `TryFrom` trait is generated.
 pub struct Item {
     source: Type,

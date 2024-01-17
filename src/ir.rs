@@ -6,7 +6,7 @@ use syn::punctuated::Punctuated;
 use syn::{parse_quote, Data, DataStruct, DeriveInput, Field, FieldValue, Token};
 
 /// Represents the intermediate representation (IR) of the struct.
-/// 
+///
 /// Target struct is the struct that the `TryFrom` trait is implemented for.
 /// Source type is the type generic type of the `TryFrom` trait.
 pub struct IR {

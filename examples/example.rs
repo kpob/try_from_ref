@@ -1,3 +1,5 @@
+use derive_try_from_ref::TryFromRef;
+
 struct Source {
     x: u32,
     y: u32,
@@ -5,7 +7,7 @@ struct Source {
     description: String,
 }
 
-#[derive(derive_try_from::TryFromRef)]
+#[derive(TryFromRef)]
 #[source(Source)]
 #[err(&'static str)]
 struct Target {
@@ -15,7 +17,7 @@ struct Target {
     is_dirty: bool,
 }
 
-#[derive(derive_try_from::TryFromRef)]
+#[derive(TryFromRef)]
 #[source(Source)]
 #[err(&'static str)]
 struct Sum {
