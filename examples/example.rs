@@ -27,6 +27,7 @@ struct Metadata {
     pub text: String,
 }
 
+// Metadata is more complex and requires custom implementation of TryFrom
 impl TryFrom<&'_ Source> for Metadata {
     type Error = &'static str;
 

@@ -4,8 +4,11 @@ use quote::{ToTokens, TokenStreamExt};
 use syn::punctuated::Punctuated;
 use syn::{FieldValue, Token, Type};
 
+/// Represents an item to be tokenized.
+/// 
+/// In the result of tokenization, an implementation of `TryFrom` trait is generated.
 pub struct Item {
-    source: Ident,
+    source: Type,
     target: Ident,
     error_ty: Type,
     input: Ident,
@@ -16,7 +19,7 @@ impl From<IR> for Item {
     fn from(value: IR) -> Self {
         Self {
             source: value.source(),
-            target: value.ident(),
+            target: value.target_ident(),
             error_ty: value.error(),
             input: value.source_ident(),
             fields: value.fields(),
