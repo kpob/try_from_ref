@@ -2,10 +2,11 @@
 name = "derive-try-from-ref"
 edition = "2021"
 version = "0.1.0"
+description = "A derive macro to generate TryFrom<&T> implementation."
 authors = ["Krzysztof Pobiarżyn <krzysztof.pobiarzyn@gmail.com>"]
 license = "MIT"
 repository = "https://github.com/kpob/try_from_ref"
-categories = ["Procedural macro helpers"]
+categories = ["Rust patterns", "Procedural macro helpers"]
 
 [dependencies]
 proc-macro2 = "1.0.69"
