@@ -1,5 +1,5 @@
-[![Crates.io](https://img.shields.io/crates/v/try_from_ref)](https://crates.io/crates/try_from_ref)
-![License: MIT](https://img.shields.io/crates/l/try_from_ref)
+[![Crates.io](https://img.shields.io/crates/v/derive-try-from-ref)](https://crates.io/crates/derive-try-from-ref)
+![License: MIT](https://img.shields.io/crates/l/derive-try-from-ref)
 
 ### Description
 This crate provides a proc macro to implement `TryFrom<&Struct>` for a target struct. It helps to convert a bigger struct to a few smaller, more specialized structs. The macro expands to a `TryFrom` implementation that tries to convert each field of the target struct from the whole source struct. If the conversion fails, the macro returns an error.
